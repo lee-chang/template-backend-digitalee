@@ -1,0 +1,28 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    // "baseUrl": "./src",
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // },
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "typeRoots": ["./src/**/interfaces/**/*", "./node_modules/@types"],
+  },
+  "files": ["./src/core/interfaces/express/index.d.ts"],
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"],
+}
